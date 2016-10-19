@@ -100,5 +100,5 @@ install(FILES ${PROJECT_BINARY_DIR}/cbor/common.h DESTINATION include/cbor)
 include_directories(${PROJECT_BINARY_DIR})
 
 subdirs(src)
-subdirs(test)
-subdirs(examples)
+#subdirs(test)
+#subdirs(examples)

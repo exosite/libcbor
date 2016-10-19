@@ -100,5 +100,13 @@ install(FILES ${PROJECT_BINARY_DIR}/cbor/common.h DESTINATION include/cbor)
 include_directories(${PROJECT_BINARY_DIR})
 
 subdirs(src)
-subdirs(test)
-subdirs(examples)
+
+option(CBOR_TEST "Enable building tests" ON)
+if(CBOR_TEST)
+    subdirs(test)
+endif()
+
+option(CBOR_EXAMPLES "Enable building examples" ON)
+if(CBOR_EXAMPLE)
+    subdirs(examples)
+endif()
